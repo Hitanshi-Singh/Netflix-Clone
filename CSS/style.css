@@ -1,0 +1,164 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  margin: 1px;
+  padding: 0px;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  /* font-size: 1.1em; */
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 0.5rem;
+  grid-template-rows: 0.8fr 5.5fr;
+  grid-auto-rows: 3fr;
+}
+.item {
+  /* background-color: rgb(55, 10, 10); */
+  /* border: 2px solid greenyellow; */
+  color: white;
+  /* box-sizing: border-box; */
+  /* padding: 20px; */
+}
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+/* Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 2% 2%;
+  /* margin-bottom: 5px; */
+  /* padding-top: 5px; */
+  /* background: rgb(255,0,0); */
+  /* border: 2px solid pink; */
+}
+
+#navbar a:hover{
+  background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgb(0, 0, 0) 10%);
+}
+#navbar img {
+  width: 15%;
+}
+/* Icons */
+#icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    width: 55% ;
+    margin: 0% 5%;
+}
+
+#icons img {
+  /* padding: 0% 2%; */
+  margin: 0% 4%;
+  width: 4.5%;
+}
+/* #browse input{
+ width: 70%;
+} */
+
+.searchIcon {
+  /* width: 80%; */
+}
+  #profile{
+    width: 7% !important;
+  }
+  
+/* Items */
+/* Box  */
+
+
+
+.hover-sec{
+  /* width: 200px !important; */
+  /* height: 100%; */
+}
+.hover-sec img{
+  width: 94.8rem;
+  height: 31rem;
+  margin: 0%;
+  object-fit: cover;
+  opacity: 0.8;
+  /* object-position: right 0px top 1px; */
+  /* position: relative; */
+  /* top: 0%; */
+}
+.hover-sec::before{
+  content: "";
+  background-color: white;
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 65.7%;
+  /* z-index: -1; */
+  opacity: 0.8;
+}
+.inner-box{
+  /* background-color: green; */
+    display: flex;
+    margin: 1px;
+    padding: 1rem;
+    /* height: 30%; */
+    width: 100%;
+}
+
+/* Box Hover Properties */
+.inner-box img{
+  display: block;
+   width: 100%;
+   /* height: 40%; */
+   /* margin: 0rem 0.2rem; */
+   padding: 0rem 0.2rem;
+   cursor: pointer;
+   /* opacity: 0.1; */
+  }
+  .cat:hover{
+    transform: scale(1.1);
+    z-index: 2;
+  }
+  .heading{
+    margin: 0px 1rem;
+    padding: 0px 0.4rem;
+    font-size: 1.2rem;
+  }
+  
+  .cat{
+   transition: all 0.4s;
+  position: relative;
+  /* z-index: 1; */
+ }
+ .overlay{
+  font-size: x-small;
+  font-family: 'Roboto', sans-serif;
+  border-top: ;
+  transition: all 0.4s;
+  padding: 10px;
+  display: none;
+  position: absolute;
+  bottom: 0%;
+  left: 1.5%;
+  width: 97%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.9082983535210959) 47%, rgba(0,0,0,0.6281863087031687) 81%, rgba(0,0,0,0.07076333951549374) 100%);
+ }
+ .cat:hover .overlay{
+  display: block;
+ }
+ .overlay a{
+  text-decoration: none;
+  color: white;
+ }
+ 
