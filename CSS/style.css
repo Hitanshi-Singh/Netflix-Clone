@@ -13,7 +13,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 0.5rem;
-  grid-template-rows: 0.8fr 5.5fr;
+  grid-template-rows: 5.5fr;
   grid-auto-rows: 3fr;
 }
 .item {
@@ -28,6 +28,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 4;
+  background-color: black;
   /* width: 100%; */
 }
 /* Navbar */
@@ -60,13 +63,20 @@ header {
     align-items:center;
     width: 55% ;
     margin: 0% 5%;
+    cursor: pointer;
 }
 
 #icons img {
   /* padding: 0% 2%; */
   margin: 0% 4%;
   width: 4.5%;
+  transition: all 0.4 ease;
 }
+
+#icons img:hover {
+  transform: scale(1.1, 1.1);
+}
+
 /* #browse input{
  width: 70%;
 } */
@@ -84,12 +94,11 @@ header {
 
 
 .hover-sec{
-  /* width: 200px !important; */
-  /* height: 100%; */
+  cursor: pointer;
 }
 .hover-sec img{
-  width: 94.8rem;
-  height: 31rem;
+  width: 98vw;
+  height: 98%;
   margin: 0%;
   object-fit: cover;
   opacity: 0.8;
@@ -97,16 +106,7 @@ header {
   /* position: relative; */
   /* top: 0%; */
 }
-.hover-sec::before{
-  content: "";
-  background-color: white;
-  position: absolute;
-  left: 0%;
-  width: 100%;
-  height: 65.7%;
-  /* z-index: -1; */
-  opacity: 0.8;
-}
+
 .inner-box{
   /* background-color: green; */
     display: flex;
@@ -162,3 +162,67 @@ header {
   color: white;
  }
  
+/* FOOTER  */
+
+ footer{
+  margin: 0rem 1px;
+  padding: 4rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  /* width: 98vw; */
+  /* background-color: chartreuse; */
+  align-items:baseline;
+  background-color: rgba(69, 67, 67, 0.262);
+ }
+
+#info {
+  width: 40vw;
+  /* background-color: bisque; */
+  /* flex-grow: 1; */
+}
+
+#info a{
+  text-decoration: none;
+  color: white;
+  margin: 0% 2%;
+  font-size: large;
+}
+
+#info a:hover{
+  cursor: pointer;
+  color: red;
+}
+#outer-contact{
+  width: 20%;
+  text-align: right;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-end; */
+
+}
+
+#outer-contact p{
+  /* margin: auto; */
+  padding: 0% 1rem;
+}
+#inner-contact{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+ }
+ #inner-contact img{
+  width: 4rem;
+  padding: 2%;
+  cursor: pointer;
+ }
+
+ #connect p{
+  text-align: center;
+  margin: 0%;
+  /* padding: 0%; */
+ }
+ #connect img{
+  margin: -5% 0%;
+  width: 17rem;
+  cursor: pointer;
+ }

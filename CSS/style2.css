@@ -26,7 +26,7 @@ header {
     display: flex;
     align-items: center;
     position: absolute;
-    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5413515748096114) 16%, rgba(0,0,0,0.7514356084230567) 41%, rgba(0,0,0,0.9895308465182948) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5413515748096114) 6%, rgba(0,0,0,0.7514356084230567) 19%, rgba(0,0,0,0.9895308465182948) 100%);
     z-index: 2;
     justify-content: space-between;
   }
@@ -56,13 +56,19 @@ header {
       align-items: center;
       width: 55% ;
       margin: 0% 5%;
-  }
-  
-  #icons img {
-    margin: 0% 4%;
-    width: 5.5%;
-  }
-  /* #browse input{
+      cursor: pointer;
+    }
+    
+    #icons img {
+      margin: 0% 4%;
+      width: 5.5%;
+      transition: all 0.2s ease;
+    }
+
+    #icons img:hover{
+      transform: scale(1.1, 1.1);
+    }
+    /* #browse input{
    width: 70%;
   } */
 
@@ -187,3 +193,67 @@ header {
     color: white;
    }
    
+   /* FOOTER  */
+
+ footer{
+  margin: 0rem 1px;
+  padding: 4rem 0rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  /* width: 98vw; */
+  /* background-color: chartreuse; */
+  align-items:baseline;
+  background-color: rgba(69, 67, 67, 0.262);
+ }
+
+#info {
+  width: 40vw;
+  /* background-color: bisque; */
+  /* flex-grow: 1; */
+}
+
+#info a{
+  text-decoration: none;
+  color: white;
+  margin: 0% 2%;
+  font-size: large;
+}
+
+#info a:hover{
+  cursor: pointer;
+  color: red;
+}
+#outer-contact{
+  width: 20%;
+  text-align: right;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-end; */
+
+}
+
+#outer-contact p{
+  /* margin: auto; */
+  padding: 0% 1rem;
+}
+#inner-contact{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+ }
+ #inner-contact img{
+  width: 4rem;
+  padding: 2%;
+  cursor: pointer;
+ }
+
+ #connect p{
+  text-align: center;
+  margin: 0%;
+  /* padding: 0%; */
+ }
+ #connect img{
+  margin: -5% 0%;
+  width: 17rem;
+  cursor: pointer;
+ }
