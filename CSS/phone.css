@@ -57,7 +57,7 @@ header{
 
 #upper-nav a{
   text-decoration: none;
-  padding: 0rem 8vw;
+  padding: 0rem 6vw;
 }
 
 .list{
@@ -71,7 +71,7 @@ header{
 }
 
 #upper-nav img{
-    width: 6vw;
+    width: 8vw;
 }
 #lower-nav{
     position: fixed;

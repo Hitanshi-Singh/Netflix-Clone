@@ -6,7 +6,7 @@
   .grid {
     grid-gap: 0.4rem;
     grid-template-rows: 1fr;
-    grid-auto-rows: 0.3fr;
+    grid-auto-rows: 0.2fr;
   }
   
 
@@ -88,6 +88,13 @@ header{
     font-family: 'Roboto', sans-serif;
     font-size: calc(7px + (4) * ((100vw -740px) / (756)));
     /* background-color: blueviolet; */
+  }
+  .inner-box{
+    padding-top: 0%;
+  }
+
+  .heading{
+    padding: 0px 0.1rem;
   }
 
 footer{

@@ -169,11 +169,11 @@ header {
     /* z-index: 1; */
    }
    .overlay{
-    font-size: x-small;
+    font-size: calc(6px + (2) * ((100vw -740px) / (756)));
     font-family: 'Roboto', sans-serif;
     /* border-top: ; */
     transition: all 0.4s;
-    padding: 10px;
+    padding: 9px;
     display: none;
     position: absolute;
     bottom: 0%;
