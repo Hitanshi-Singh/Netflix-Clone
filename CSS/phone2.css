@@ -2,13 +2,21 @@
     color: white;
   }
   /* grid  */
-  
+  body{
+  }
   .grid {
     grid-gap: 0.4rem;
     grid-template-rows: 1fr;
     grid-auto-rows: 0.2fr;
   }
+  .heading{
+    font-size: calc(10px + (4) * ((100vw -200px) / (756)));
+  }
   
+  .overlay{
+    font-size: calc(4px + (4) * ((100vw -200px) / (756)));
+
+  }
 
 .hover-sec img {
   top: 8%;
