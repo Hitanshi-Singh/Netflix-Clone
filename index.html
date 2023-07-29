@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
   </head>
   <body>
     <div class="grid">
@@ -48,6 +52,19 @@
         </nav>
 
         <div id="icons">
+          <div class="wrapper">
+            <div class="select-btn">
+              <span>Select Country</span>
+              <i class="uil uil-angle-down"></i>
+            </div>
+            <div class="content">
+              <div class="search">
+                <i class="uil uil-search"></i>
+                <input spellcheck="false" type="text" placeholder="Search" />
+              </div>
+              <ul class="options"></ul>
+            </div>
+          </div>
           <img src="/images/bell icon.png" alt="" id="bell-icon" />
           <img src="/images/search.png" alt="" class="searchIcon" />
           <img src="/images/cast.png" alt="" id="cast" />
@@ -870,5 +887,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
